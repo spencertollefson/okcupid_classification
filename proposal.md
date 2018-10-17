@@ -20,7 +20,9 @@ Many people demonstrate they are willing to share information online that they w
 
 ## Description of data:
 
-The data is a table of OkCupid users' attributes from 2XXX in San Francisco. OkCupid provided the anonymized dataset to XYZ for use in ABC. Github can be found here.
+The data is a table of OkCupid users' attributes pulled from 2012 in the San Francisco region. OkCupid provided the anonymized dataset to Albert Y. Kim and Adriana Escobedo-Land for use in their research published in the [Journal of Statistics Education, Volume 23, 2015](https://amstat.tandfonline.com/doi/abs/10.1080/10691898.2015.11889737).
+
+The [Github can be found here](https://github.com/rudeboybert/JSE_OkCupid).
 
 This dataset was released on the heels of a dataset published in 2,014 by Danish researchers. That data set was **not** anonymized and its release sparked backlash against the researchers as it exposed details of 68,000 individuals publicly.
 
