@@ -6,7 +6,7 @@ Proposal for Project McNulty
 
 # Projecting Smoking Habits Based on OkCupid Profiles
 
-[OkCupid.com](https://OkCupid.com) is an online platform primarily known for online dating, while also providing services for friendship, social networking, and "speciality" dating such as for conservatives and for vegans. The site was launched in 2004 and as early as 2007 had some of the best name recognition among its competitors.
+[OkCupid.com](https://OkCupid.com) is an online platform primarily known for online dating, while also providing services for friendship, social networking, and "specialty" dating such as for conservatives and for vegans. The site was launched in 2004 and as early as 2007 had some of the best name recognition among its competitors.
 
 For a monthly fee - varying based on the amount of features a user desires - customers create a profile that is meant to illustrate unique and interesting facts and interests. Some characteristics are descriptive and straightforward, such as age, height, and sex. Others are similar, but are topics considered more private or vulnerable such as income, education level, sexual orientation, and religion. Then there are text fields which ask questions, allowing customers to express themselves creatively with their answers and also indicate what they are looking for in their partners.
 
@@ -56,7 +56,7 @@ essay(0-9)    | string  | NA | NA | Text field replies to questions | N | Many m
 Each row of table has fields of information pertaining to one individual. At the earliest stages of EDA, I decided to drop the text response fields from each application as there will be NLP component for this project.
 
 ## Known Unknowns
-- All information in this table is self-reported. As such, it is likely that some users will untruthfully answer questions. Particularly, topics socially considered taboo such as drinking, drug use, and smoking are strong candidates for eliciting untruthful answers. It is unknown which responses are untruthful and how many there are.
-- Although OkCupid.com procured this dataset, it is unconfirmed if the profiles are authentic. 
-- Drug use, drinking, and tobacco smoking habits potentially may have high correlation.
 
+- All information in this table is self-reported. As such, it is likely that some users will untruthfully answer questions. Particularly, topics socially considered taboo such as drinking, drug use, and smoking are strong candidates for eliciting untruthful answers. It is unknown which responses are untruthful and how many there are.
+- Although OkCupid.com procured this dataset, it is unconfirmed if the profiles are authentic.
+- Drug use, drinking, and tobacco smoking habits potentially may have high correlation.
