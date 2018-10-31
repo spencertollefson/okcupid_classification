@@ -3,7 +3,12 @@
 ## October 31, 2018
 
 # Project Design
-OkCupid.com is an online dating platform catered toward single adults who are seeking romantic partners.
+OkCupid.com is an online dating platform catered toward single adults who are seeking romantic partners. Upon getting my hands on a dataset of nearly 60,000 OkCupid.com profiles, I became interested if the other attributes were indicative of people's desire to want or not want children. Interestingly enough, the dataset showed that many people chose not to provide this optional information. My assumption was this is because people do not want to be instantly filtered as a "no" if their children rearing plans do not match people who may well be good potential matches.
+
+A model that performs well in predicting one's desire to raise children would provide better compatibility at the outset of people seeking romantic partners. Potential uses could be for individuals in a web app, 
+
+
+Thus, I built models to predict if 
 
 
 # Tools
@@ -22,9 +27,9 @@ The data was obtained from a (Github repo)[https://github.org/]. The original da
 All features may be found in the appendix. Cleaning was applied to many columns to account for grouping of multiple subjects. For example, the original data grouped religious intensity (serious, nonchalant, unserious) and the name of the religion together. By cleaning I separated these two subjects and considered them separate features.
 
 
-
 # What I would do differently
 
+See if certain ages are obvious (under 22, above 40) and screen out those datasets to make the modeling more predictive.
 
 Assign ordinal values to certain features. For example, intuitively it appears there is a ranking to be derived to how much someone consumes alcohol when the optional descriptors "rarely", "socially", and "often" are used. There are numerous categorical features which I believe ordinal values could have been derived and modeled.
 
