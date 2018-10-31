@@ -24,7 +24,7 @@ The data is a table of OkCupid users' attributes pulled from 2012 in the San Fra
 
 The [Github can be found here](https://github.com/rudeboybert/JSE_OkCupid).
 
-This dataset was released on the heels of a dataset published in 2,014 by Danish researchers. That data set was **not** anonymized and its release sparked backlash against the researchers as it exposed details of 68,000 individuals publicly.
+This dataset was released on the heels of a dataset published in 2014 by Danish researchers. That data set was **not** anonymized and its release sparked backlash against the researchers as it exposed details of 68,000 individuals publicly.
 
 Features | Type | Number Categories | Planned number categories | Description | Plan to Use in Model | Availability for Profiles
 --- | --- | --- | --- | --- | --- | ---
