@@ -1,0 +1,13 @@
+<html>
+<body>
+
+  <form action='/count' method='post'>
+    <textarea name='text'>{{text}}</textarea>
+    <input type='submit' value='Submit' />
+  </form>
+
+  {% if count %}
+  There are {{count}} words in the box
+  {% endif %}
+</body>
+</html>
