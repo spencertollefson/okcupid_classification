@@ -16,24 +16,24 @@ Once their profile is created, customers are able to browser other profiles, sen
 A model that performs well in predicting one's desire to raise children would have multiple uses. Potential uses for a high performing model include, but are not limited to, the following:
 
 * Hosted as a web app where people may input information of someone they are interested in. The web app would output the model's predicted probability that the individual wants to have children.
-* Improve matchmaking capabilities of dating services
-* Essentially a misuse, but for health insurance companies to decide how likely it is their customers will have children in the future
+* Improve matchmaking capabilities of dating services.
+* Essentially a misuse, but for health insurance companies to decide how likely it is their customers will have children in the future.
 * Another misuse. HR departments of various companies to use to determine how likely it is a potential or current employee will have a child and miss work time.
 
 
 # Tools
 
 * Python:
-  * Data cleaning: pandas, joblib
-  * Data analysis: numpy, pandas, scikit-learn, Jupyter
-  * Presentation: matplotlib, seaborn
+  * Data cleaning: Pandas, Joblib
+  * Data analysis: Numpy, Pandas, Scikit-learn, Jupyter
+  * Presentation: Matplotlib, Seaborn
 * Google Slides
 
 # Data
 
 The data was obtained from a [Github repo](https://github.com/rudeboybert/JSE_OkCupid). The original data was scraped via a Python script in June 2012. It contains profile attributes of nearly 60,000 OkCupid.com accounts which had been active during the year preceding June 30, 2012, have a profile picture, and have their city listed as within a 25 mile radius of San Francisco, CA.
 
-All features may be found in the appendix. Cleaning was applied to many columns to account for grouping of multiple subjects. This in effect became the only form of feature engineering I applied to the data For example, the original data grouped religious intensity (serious, not serious, no care at all) and the name of the religion together. By cleaning I separated these two subjects and considered them separate features.
+All features may be found in the appendix. Cleaning was applied to many columns to account for grouping of multiple subjects. This in effect became the only form of feature engineering I applied to the data. For example, the original data grouped religious intensity (serious, not serious, no care at all) and the name of the religion together. By cleaning I separated these two subjects and considered them separate features.
 
 Ethical questions bombarded me as I dealt with this data set and the entire project. Is it ethical to create a model to help people "screen out" others while dating? How about using ethnicity, religious, and sexual orientation as features for deciding if someone wants to have children? How about the people whose profiles were used as the data observations?
 
@@ -46,6 +46,8 @@ Age was the feature of strongest correlation to the target variable. See if cert
 Assign ordinal values to certain features. For example, intuitively it appears there is a ranking to be derived to how much someone consumes alcohol when the optional descriptors "rarely", "socially", and "often" are used. There are numerous categorical features which I believe ordinal values could have been derived and modeled.
 
 There was a "maybe" class for the target variable of "want offspring". With more time, I would have made a multi-class model that attempted to classify profiles as "no", "maybe", or "yes" for the target variable of wanting children.
+
+Consider the attributes of people who **did** choose to list their children preferences to those who **did not**. This would give a better idea of how well the model could be extrapolated to a large proportion of the population which chose not to disclose that information.
 
 Think more carefully about the ethical considerations involved in which features are used in the modeling. I purposely removed ethnicity and income level as I did not want my model to discriminate, but used features such as sexual orientation and religion. Although all of this information was freely offered by users in making their profiles, times are changing as people become more aware of how their data is and can be used. Privacy preferences are being updated as well.
  
