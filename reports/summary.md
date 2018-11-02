@@ -39,6 +39,10 @@ Ethical questions bombarded me as I dealt with this data set and the entire proj
 
 While I did not delve too deeply into the implications due to time constraints and the likelihood that this project would not go viral, it did make me think about this data.
 
+# Results
+
+I created models of 6 different classifier algorithms. All used sk-learn library tools and typically used the GridSearchCV or RandomizedSearchCV to hone in on some of the best tuning parameters. The gradient boosting implementation performed best, with an AUC ROC of 0.774. The others all fell in between that value and 0.720; thus a fairly narrow range of values.
+
 # What I would do differently
 
 Age was the feature of strongest correlation to the target variable. See if certain ages have strong correlations with the target (i.e. perhaps under 21 above 40 years old definitively do not want children) and filter out observations with those features to make the modeling more robust on a harder to nail-down age group.

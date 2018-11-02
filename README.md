@@ -4,6 +4,8 @@
 
 This project took a database of OkCupid.com profile attributes and used it to build a classification model. The model predicts how likely an individual is to either *want* or *not want* to raise children in the future.
 
+[Blog post on the topic can be found here.](http://www.spencertollefson.com/blog/who-wants-children/)
+
 ## Project Design
 
 OkCupid.com is an online dating platform catered toward single adults who are seeking romantic partners. For a monthly fee - varying based on the amount of features a user desires - customers create a profile that is meant to illustrate unique and interesting facts and interests. Some characteristics are descriptive and straightforward, such as age, height, and sex. Others are similar, but are topics considered more private or vulnerable such as income, education level, sexual orientation, and religion. Then there are text fields which ask questions, allowing customers to express themselves creatively with their answers and also indicate what they are looking for in their partners.
@@ -43,6 +45,23 @@ While I did not delve too deeply into the implications due to time constraints a
 
 
 ## Appendix
+
+
+### Repository Organization
+
+| Name | Description
+------ | ------------
+`cupid_cleaning.ipynb` | Inputs then cleans the raw `data/profiles.csv` dataset. Outputs a cleaned data table.
+`modeling_workbook.ipynb` | Inputs a cleaned data table. Performs all modeling analysis including creating the X (features) and y (target) pandas DataFrames, then creating, executing, and scoring models.
+`plots.ipynb` | Creates all plots used in presentation and blog post.
+`data/` | Directory contains raw and cleaned data
+`flask_okcupid/`| Directory containing flask app. NOT YET FUNCTIONAL.
+`images/`| Directory containing images used in presentation and blog post
+`legacy_code` | Jupyter notebooks that were used in early analysis to had down a few different paths, but ultimately not implemented in final models or plots. These are messy as the code was never cleaned.
+`models/` | This folder contains best version of all classifying models created (SK-Learn) pickled in `.joblib` format.
+`plots/` | This folder contains saved plot images created in `plots.ipynb`. These images are mostly used in the presentation and blog post.
+`reports/` | Contains original proposal, summary of project, and presenation slides for the project.
+`utils.py` | Contains some larger functions used in the notebooks.
 
 ### Dataset Features
 
